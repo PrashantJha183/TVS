@@ -3,7 +3,7 @@ import tvsLogo from "../../assets/tvs_logo.png";
 import { MdDirectionsBike, MdTranslate } from "react-icons/md";
 import { FaVials } from "react-icons/fa"; // Lab vials/test tubes
 
-export const Header = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -135,3 +135,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
