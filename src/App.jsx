@@ -1,5 +1,5 @@
 import Header from "./components/base/Header";
-import Hero from "./components/homepage/hero";
+import Hero from "./components/homepage/Hero";
 import About from "./components/homepage/About";
 import Blog from "./components/homepage/Blog";
 import Footer from "./components/base/Footer";
