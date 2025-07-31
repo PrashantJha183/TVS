@@ -4,6 +4,7 @@ import img2 from "../../assets/hero_banner.png";
 import img3 from "../../assets/hero_banner.png";
 import img4 from "../../assets/hero_banner.png";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+
 const images = [img1, img2, img3, img4];
 
 const Hero = () => {
@@ -70,16 +71,16 @@ const Hero = () => {
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-              className="hero-image object-cover"
+              className="hero-image object-cover w-full h-full"
             />
           </div>
         ))}
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation Buttons (only show on lg and above) */}
       <button
         onClick={prevSlide}
-        className="hidden sm:flex items-center justify-center absolute top-1/2 left-0 -translate-y-1/2 z-10 transition-all duration-300 hover:scale-105 hover:shadow-xl semi-button"
+        className="hidden lg:flex items-center justify-center absolute top-1/2 left-0 -translate-y-1/2 z-10 transition-all duration-300 hover:scale-105 hover:shadow-xl"
         style={{
           backgroundColor: "#000000cc",
           width: "60px",
@@ -96,7 +97,7 @@ const Hero = () => {
 
       <button
         onClick={nextSlide}
-        className="hidden sm:flex items-center justify-center absolute top-1/2 right-0 -translate-y-1/2 z-10 text-white shadow-md semi-button"
+        className="hidden lg:flex items-center justify-center absolute top-1/2 right-0 -translate-y-1/2 z-10 text-white shadow-md"
         style={{
           backgroundColor: "#000000cc",
           color: "#fff",
