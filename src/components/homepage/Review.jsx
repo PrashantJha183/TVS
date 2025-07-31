@@ -101,7 +101,10 @@ const Review = () => {
   }, [isMobile]);
 
   return (
-    <div className="py-16 px-6 font-nunito" id="reviews">
+    <div
+      className="py-16 px-6 font-nunito overflow-x-auto scrollbar-hide"
+      id="reviews"
+    >
       {/* Heading */}
       <motion.div
         className="max-w-7xl mx-auto mb-8 overflow-x-auto scrollbar-hide whitespace-nowrap"
