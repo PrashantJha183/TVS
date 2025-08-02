@@ -113,17 +113,17 @@ const Header = () => {
       </header>
 
       {/* Desktop-only top custom band */}
-      <div className="hidden md:flex custom-band">
-        <p>TVS - Bhawani Motors</p>
+      <div className="hidden md:flex custom-band font-bold">
+        <p>Authorized Dealer - TVS Darbhanga</p>
       </div>
 
       {/* Mobile/Tablet Bottom Bar */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 md:hidden z-50 shadow-inner">
         <div
-          className="w-full bg-white flex items-center justify-center pl-8 font-nunito text-sm"
+          className="w-full bg-white flex items-center justify-center pl-8 font-nunito text-sm font-bold"
           style={{ color: "#757575", height: "5vh" }}
         >
-          <p>TVS - Bhawani Motors</p>
+          <p>Authorized Dealer - TVS Darbhanga</p>
         </div>
 
         {/* Separator */}
